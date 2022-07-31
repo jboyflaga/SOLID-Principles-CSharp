@@ -30,7 +30,19 @@ namespace _1._SRP_violation.Presentation
                     var totalNetPrice = itemNetPrice * item.Quantity;
                     overallNetPrice += totalNetPrice;
 
-                    Console.WriteLine($"{item.Name}\t\t{itemNetPrice}\t{item.Quantity}\t{totalNetPrice}");
+                    if (item.Quantity > 100)
+                    {
+                        Console.Write($"{item.Name}\t\t{itemNetPrice}\t");
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.Write($"{item.Quantity}");
+                        Console.ResetColor();
+                        Console.Write($"\t{totalNetPrice}");
+                        Console.WriteLine();
+                    }
+                    else
+                    {
+                        Console.WriteLine($"{item.Name}\t\t{itemNetPrice}\t{item.Quantity}\t{totalNetPrice}");
+                    }
                 }
             }
 

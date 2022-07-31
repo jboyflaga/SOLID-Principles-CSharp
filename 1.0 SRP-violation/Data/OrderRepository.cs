@@ -29,7 +29,23 @@ namespace _1._SRP_violation.Data
                         Name = "PC",
                         Price = 20,
                         Discount = 0.2m,
-                        Quantity = 3
+                        Quantity = 10
+                    },
+                    new ItemDbModel
+                    {
+                        Id = Guid.NewGuid(),
+                        Name = "Phone",
+                        Price = 5,
+                        Discount = 0.3m,
+                        Quantity = 101
+                    },
+                    new ItemDbModel
+                    {
+                        Id = Guid.NewGuid(),
+                        Name = "Tablet",
+                        Price = 7,
+                        Discount = 0.2m,
+                        Quantity = 200
                     }
                 }
             };

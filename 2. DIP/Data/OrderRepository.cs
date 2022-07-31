@@ -33,7 +33,23 @@ namespace _2._DIP.Data
                         Name = "PC",
                         OriginalPrice = 20,
                         Discount = 0.2m,
-                        Quantity = 3
+                        Quantity = 10
+                    },
+                    new Item
+                    {
+                        Id = Guid.NewGuid(),
+                        Name = "Phone",
+                        OriginalPrice = 5,
+                        Discount = 0.3m,
+                        Quantity = 101
+                    },
+                    new Item
+                    {
+                        Id = Guid.NewGuid(),
+                        Name = "Tablet",
+                        OriginalPrice = 7,
+                        Discount = 0.2m,
+                        Quantity = 200
                     }
                 }
             };
