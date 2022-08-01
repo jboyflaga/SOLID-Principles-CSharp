@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace _1._SRP_violation.Presentation
 {
-    internal class ReportPrinter
+    internal class ReportPresenter
     {
         public void Print(Guid orderId)
         {

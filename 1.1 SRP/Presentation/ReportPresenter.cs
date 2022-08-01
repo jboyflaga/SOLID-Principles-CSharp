@@ -1,26 +1,17 @@
-﻿using _2._DIP.Domain;
+﻿using _1._SRP.Domain;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _2._DIP.Presentation
+namespace _1._SRP.Presentation
 {
-    internal class ReportPrinter
+    internal class ReportPresenter
     {
-        private readonly ReportGenerator reportGenerator;
-
-        public ReportPrinter(ReportGenerator reportGenerator)
+        public void Print(PrintableData data)
         {
-            this.reportGenerator = reportGenerator;
-        }
-
-        public void Print(Guid orderId)
-        {
-            PrintableData data = reportGenerator.GenerateReportData(orderId);
-
-            Console.WriteLine($"DIP example");
+            Console.WriteLine($"SRP example");
             Console.WriteLine();
 
             Console.WriteLine($"Order: {data.OrderNumber}");

@@ -7,7 +7,7 @@ namespace _1._SRP_violation
         static void Main(string[] args)
         {
             var orderId = Guid.NewGuid();
-            var reportPrinter = new ReportPrinter();
+            var reportPrinter = new ReportPresenter();
             reportPrinter.Print(orderId);
         }
     }

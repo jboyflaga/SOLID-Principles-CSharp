@@ -11,7 +11,7 @@ namespace _2._DIP
             // Constructing object graph
             IOrderRepository orderRepository = new OrderRepository();
             var reportGenerator = new ReportGenerator(orderRepository);
-            var reportPrinter = new ReportPrinter(reportGenerator);
+            var reportPrinter = new ReportPresenter(reportGenerator);
 
             // Do work
             var orderId = Guid.NewGuid();
