@@ -16,7 +16,7 @@ namespace _2._DIP.Presentation
             this.reportGenerator = reportGenerator;
         }
 
-        public void Print(Guid orderId)
+        public void Present(Guid orderId)
         {
             PrintableData data = reportGenerator.GenerateReportData(orderId);
 

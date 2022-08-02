@@ -8,7 +8,7 @@ namespace _1._SRP_violation
         {
             var orderId = Guid.NewGuid();
             var reportPrinter = new ReportPresenter();
-            reportPrinter.Print(orderId);
+            reportPrinter.Present(orderId);
         }
     }
 }

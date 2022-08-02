@@ -9,7 +9,7 @@ namespace _1._SRP.Presentation
 {
     internal class ReportPresenter
     {
-        public void Print(PrintableData data)
+        public void Present(PrintableData data)
         {
             Console.WriteLine($"SRP example");
             Console.WriteLine();

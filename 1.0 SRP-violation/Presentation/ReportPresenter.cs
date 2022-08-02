@@ -9,7 +9,7 @@ namespace _1._SRP_violation.Presentation
 {
     internal class ReportPresenter
     {
-        public void Print(Guid orderId)
+        public void Present(Guid orderId)
         {
             Console.WriteLine($"SRP violation example");
             Console.WriteLine();

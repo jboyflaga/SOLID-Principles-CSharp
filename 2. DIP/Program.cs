@@ -15,7 +15,7 @@ namespace _2._DIP
 
             // Do work
             var orderId = Guid.NewGuid();
-            reportPrinter.Print(orderId);
+            reportPrinter.Present(orderId);
         }
     }
 }

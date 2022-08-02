@@ -12,7 +12,7 @@ namespace _1._SRP
             var printableData = reportGenerator.GenerateReportData(orderId);
 
             var reportPrinter = new ReportPresenter();
-            reportPrinter.Print(printableData);
+            reportPrinter.Present(printableData);
         }
     }
 }
